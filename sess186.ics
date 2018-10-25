@@ -1,0 +1,49 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:Linklings LLC
+BEGIN:VTIMEZONE
+TZID:America/Chicago
+X-LIC-LOCATION:America/Chicago
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0600
+TZOFFSETTO:-0500
+TZNAME:CDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0600
+TZNAME:CST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTAMP:20181025T134932Z
+LOCATION:C141/143/149
+DTSTART;TZID=America/Chicago:20181115T153000
+DTEND;TZID=America/Chicago:20181115T170000
+UID:submissions.supercomputing.org_SC18_sess186@linklings.com
+SUMMARY:File Systems: Data Movement and Provenance
+DESCRIPTION:A Year in the Life of a Parallel File System\n\nLockwood, Snyd
+ er, Wang, Byna, Carns...\n\nI/O performance is a critical aspect of data-i
+ ntensive scientific computing.  We seek to advance the state of the practi
+ ce in understanding and diagnosing I/O performance issues through investig
+ ation of a comprehensive I/O performance data set that captures a full yea
+ r of production storage activity...\n\n---------------------\nDac-Man: Dat
+ a Change Management for Scientific Datasets on HPC Systems\n\nGhoshal, Ram
+ akrishnan, Agarwal\n\nScientific data is growing rapidly and often changes
+  due to instrument configurations, software updates, or quality assessment
+ s. These changes in datasets can result in significant waste of compute an
+ d storage resources on HPC systems as downstream pipelines are reprocessed
+ . Data changes need to be ...\n\n---------------------\nStacker: An Autono
+ mic Data Movement Engine for Extreme-Scale Data Staging-Based In Situ Work
+ flows\n\nSubedi, Davis, Duan, Klasky, Kolla...\n\nData staging and in situ
+  workflows are being explored extensively as an approach to address data-r
+ elated costs at very large scales. However, the impact of emerging storage
+  architectures (e.g., deep memory hierarchies and burst buffers) upon data
+  staging solutions remains a challenge. In this paper,...\n
+END:VEVENT
+END:VCALENDAR
+

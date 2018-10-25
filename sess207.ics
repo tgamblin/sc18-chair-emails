@@ -1,0 +1,49 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:Linklings LLC
+BEGIN:VTIMEZONE
+TZID:America/Chicago
+X-LIC-LOCATION:America/Chicago
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0600
+TZOFFSETTO:-0500
+TZNAME:CDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0600
+TZNAME:CST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTAMP:20181025T134925Z
+LOCATION:C141/143/149
+DTSTART;TZID=America/Chicago:20181115T103000
+DTEND;TZID=America/Chicago:20181115T120000
+UID:submissions.supercomputing.org_SC18_sess207@linklings.com
+SUMMARY:Programming Systems Tools
+DESCRIPTION:Dynamic Data Race Detection for OpenMP Programs\n\nGu, Mellor-
+ Crummey\n\nTwo concurrent accesses to a shared variable that are unordered
+  by synchronization are said to be a data race if at least one access is a
+  write. Data races cause shared memory parallel programs to behave unpredi
+ ctably. This paper describes ROMP -- a tool for detecting data races in ex
+ ecutions of sca...\n\n---------------------\nParSy: Inspection and Transfo
+ rmation of Sparse Matrix Computations for Parallelism\n\nCheshmi, Kamil, M
+ ills Strout, Mehri Dehnavi\n\nIn this work, we describe ParSy, a framework
+  that uses a novel inspection strategy along with a simple code transforma
+ tion to optimize parallel sparse algorithms for shared memory processors. 
+ Unlike existing approaches that can suffer from load imbalance and excessi
+ ve synchronization, ParSy uses a n...\n\n---------------------\nDetecting 
+ MPI Usage Anomalies via Partial Program Symbolic Execution\n\nYe, Zhao, Sa
+ rkar\n\nMPI is a message passing based programming model for distributed-m
+ emory parallelism that has been had been widely used for programming super
+ computers for over 25 years. However, debugging and verification of MPI pr
+ ograms is widely recognized to be a deep technical challenge. This challen
+ ge is furthe...\n
+END:VEVENT
+END:VCALENDAR
+

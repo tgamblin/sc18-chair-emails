@@ -1,0 +1,49 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:Linklings LLC
+BEGIN:VTIMEZONE
+TZID:America/Chicago
+X-LIC-LOCATION:America/Chicago
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0600
+TZOFFSETTO:-0500
+TZNAME:CDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0600
+TZNAME:CST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTAMP:20181025T134931Z
+LOCATION:C141/143/149
+DTSTART;TZID=America/Chicago:20181114T103000
+DTEND;TZID=America/Chicago:20181114T120000
+UID:submissions.supercomputing.org_SC18_sess205@linklings.com
+SUMMARY:Non-Volatile Memory
+DESCRIPTION:DRAGON: Breaking GPU Memory Capacity Limits with Direct NVM Ac
+ cess\n\nMarkthub, Belviranli, Lee, Vetter, Matsuoka\n\nHeterogeneous compu
+ ting with accelerators is growing in importance in high performance comput
+ ing (HPC). Recently, application datasets have expanded beyond the memory 
+ capacity of these accelerators, and often beyond the capacity of their hos
+ ts. Meanwhile, nonvolatile memory (NVM) storage has emerged...\n\n--------
+ -------------\nSiena: Exploring the Design Space of Heterogeneous Memory S
+ ystems\n\nPeng, Vetter\n\nMemory systems are crucial to the performance, p
+ ower, and cost of high-performance computing systems. Recently, multiple f
+ actors are driving the need for more complex, deep memory hierarchies. How
+ ever, architects and customers are struggling to design memory systems tha
+ t effectively balance multiple...\n\n---------------------\nRuntime Data M
+ anagement on Non-Volatile Memory-Based Heterogeneous Memory for Task-Paral
+ lel Programs\n\nWu, Ren, Li\n\nNon-volatile memory (NVM) provides a scalab
+ le solution to replace DRAM as main memory. Because of relatively high lat
+ ency and low bandwidth of NVM (comparing with DRAM), NVM often pairs with 
+ DRAM to build a  heterogeneous main memory system (HMS). Deciding data pla
+ cement on NVM-based HMS is critical...\n
+END:VEVENT
+END:VCALENDAR
+

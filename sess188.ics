@@ -1,0 +1,49 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:Linklings LLC
+BEGIN:VTIMEZONE
+TZID:America/Chicago
+X-LIC-LOCATION:America/Chicago
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0600
+TZOFFSETTO:-0500
+TZNAME:CDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0600
+TZNAME:CST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTAMP:20181025T134932Z
+LOCATION:C140/142
+DTSTART;TZID=America/Chicago:20181114T103000
+DTEND;TZID=America/Chicago:20181114T120000
+UID:submissions.supercomputing.org_SC18_sess188@linklings.com
+SUMMARY:MPI Optimization and Characterization
+DESCRIPTION:Characterization of MPI Usage on a Production Supercomputer\n\
+ nChunduri, Parker, Balaji, Harms, Kumaran\n\nMPI is the most prominent pro
+ gramming model used in scientific computing today.  Despite it's importanc
+ e, however, how scientific applications use it in production is not very w
+ ell understood due to the lack of low overhead profiling tools.   We used 
+ a lightweight profiling tool, called autoperf, to...\n\n------------------
+ ---\nFramework for Scalable Intra-Node Collective Operations Using Shared 
+ Memory\n\nJain, Kaleem, Balmana, Langer, Durnov...\n\nCollective operation
+ s are used in MPI programs to express common communication patterns, colle
+ ctive computations, or synchronizations. In many collectives, such as barr
+ ier or allreduce, the intra-node component of the collective is in the cri
+ tical path, as the inter-node communication cannot start u...\n\n---------
+ ------------\nCooperative Rendezvous Protocols for Improved Performance an
+ d Overlap\n\nChakraborty, Bayatpour, Hashmi, Subramoni, Panda\n\nWith the 
+ emergence of larger multi-/many-core clusters, performance of large messag
+ e communication is becoming more important. MPI libraries use different Re
+ ndezvous protocols to perform large message communication. However, existi
+ ng Rendezvous protocols do not consider the overall communication pat...\n
+END:VEVENT
+END:VCALENDAR
+

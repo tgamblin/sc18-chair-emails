@@ -1,0 +1,49 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:Linklings LLC
+BEGIN:VTIMEZONE
+TZID:America/Chicago
+X-LIC-LOCATION:America/Chicago
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0600
+TZOFFSETTO:-0500
+TZNAME:CDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0600
+TZNAME:CST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTAMP:20181025T134932Z
+LOCATION:C146
+DTSTART;TZID=America/Chicago:20181114T103000
+DTEND;TZID=America/Chicago:20181114T120000
+UID:submissions.supercomputing.org_SC18_sess183@linklings.com
+SUMMARY:Task-Based Programming
+DESCRIPTION:A Divide and Conquer Algorithm for DAG Scheduling Under Power 
+ Constraints\n\nDemirci, Marincic, Hoffmann\n\nWe consider the problem of s
+ cheduling a parallel computation–represented as a directed acyclic graph (
+ DAG)–on a distributed parallel system with a global resource constraint–sp
+ ecifically a global power budget–and configurable resources, allowing a ra
+ nge of different power/performance tradeoffs. Ther...\n\n-----------------
+ ----\nDynamic Tracing: Memoization of Task Graphs for Dynamic Task-Based R
+ untimes\n\nLee, Slaughter, Bauer, Treichler, Warszawski...\n\nMany recent 
+ programming systems for both supercomputing and data center workloads gene
+ rate task graphs to express computations that run on parallel and distribu
+ ted machines. Due to the overhead associated with constructing these graph
+ s the dependence analysis that generates them is often statically ...\n\n-
+ --------------------\nRuntime-Assisted Cache Coherence Deactivation in Tas
+ k Parallel Programs\n\nCaheny, Alvarez, Valero, Moretó, Casas\n\nWith incr
+ easing core counts, the scalability of directory-based cache coherence has
+  become a challenging problem. To reduce the area and power needs of the d
+ irectory, recent proposals reduce its size by classifying data as private 
+ or shared, and disable coherence for private data. However, existing ...\n
+END:VEVENT
+END:VCALENDAR
+

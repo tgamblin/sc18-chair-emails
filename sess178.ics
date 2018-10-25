@@ -1,0 +1,48 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:Linklings LLC
+BEGIN:VTIMEZONE
+TZID:America/Chicago
+X-LIC-LOCATION:America/Chicago
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0600
+TZOFFSETTO:-0500
+TZNAME:CDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0600
+TZNAME:CST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTAMP:20181025T134925Z
+LOCATION:C146
+DTSTART;TZID=America/Chicago:20181113T133000
+DTEND;TZID=America/Chicago:20181113T150000
+UID:submissions.supercomputing.org_SC18_sess178@linklings.com
+SUMMARY:Large-Scale Algorithms
+DESCRIPTION:TriCore: Parallel Triangle Counting on GPUs\n\nHu, Liu, Huang\
+ n\nTriangle counting algorithm enumerates the triangles in a graph by iden
+ tifying the common neighbors between two vertices of every edge. In this w
+ ork, we present TriCore, a new GPU-based high-performance and scalable tri
+ angle counting system that consists of three main techniques. First, we de
+ sign a ...\n\n---------------------\nDistributed-Memory Hierarchical Compr
+ ession of Dense SPD Matrices\n\nYu, Reiz, Biros\n\nWe present a distribute
+ d-memory algorithm for the hierarchical compression of SPD matrices. Our m
+ ethod is based on GOFMM, an algorithm that appeared in doi:10.1145/3126908
+ .3126921.\n\nFor many SPD matrices, GOFMM enables compression and approxim
+ ate matrix-vector multiplication in NlogN time---as oppos...\n\n----------
+ -----------\nLarge-Scale Hierarchical K-Means for Heterogeneous Many-Core 
+ Supercomputers\n\nLi, Yu, Zhao, Fu, Wang...\n\nThis paper presents a novel
+  design and implementation of k-means clustering algorithm targeting the S
+ unway TaihuLight supercomputer. We introduce a multi-level parallel partit
+ ion approach that not only partitions by dataflow and centroid, but also b
+ y dimension. Our multi-level (nkd) approach unlocks...\n
+END:VEVENT
+END:VCALENDAR
+

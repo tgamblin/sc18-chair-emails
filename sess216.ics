@@ -1,0 +1,49 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:Linklings LLC
+BEGIN:VTIMEZONE
+TZID:America/Chicago
+X-LIC-LOCATION:America/Chicago
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0600
+TZOFFSETTO:-0500
+TZNAME:CDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0600
+TZNAME:CST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTAMP:20181025T134932Z
+LOCATION:C146
+DTSTART;TZID=America/Chicago:20181114T133000
+DTEND;TZID=America/Chicago:20181114T150000
+UID:submissions.supercomputing.org_SC18_sess216@linklings.com
+SUMMARY:Resilience II
+DESCRIPTION:Lessons Learned from Memory Errors Observed Over the Lifetime 
+ of Cielo\n\nLevy, Ferreira, DeBardeleben, Siddiqua, Sridharan...\n\nMainta
+ ining the performance of high-performance computing (HPC) applications as 
+ failures increase is a major challenge for next-generation extreme-scale s
+ ystems. Recent research demonstrates that hardware failures are expected t
+ o become more common due to increased component counts, reduced device-f..
+ .\n\n---------------------\nEvaluating and Accelerating High-Fidelity Erro
+ r Injection for HPC\n\nChang, Lym, Kelly, Sullivan, Erez\n\nWe address two
+  important concerns in the analysis of the behavior of applications in the
+  presence of hardware errors: (1) when is it important to model how hardwa
+ re faults lead to erroneous values (instruction-level errors) with high fi
+ delity, as opposed to using simple bit-flipping models, and (2) ...\n\n---
+ ------------------\nPartial Redundancy in HPC Systems with Non-Uniform Nod
+ e Reliabilities\n\nHussain, Znati, Melhem\n\nWe study the usefulness of pa
+ rtial redundancy in HPC message passing systems where individual node fail
+ ure distributions are not identical. Prior research works on fault toleran
+ ce have generally assumed identical failure distributions for the nodes of
+  the system. In such settings, partial replicatio...\n
+END:VEVENT
+END:VCALENDAR
+

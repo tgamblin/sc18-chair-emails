@@ -1,0 +1,50 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:Linklings LLC
+BEGIN:VTIMEZONE
+TZID:America/Chicago
+X-LIC-LOCATION:America/Chicago
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0600
+TZOFFSETTO:-0500
+TZNAME:CDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0600
+TZNAME:CST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTAMP:20181025T134932Z
+LOCATION:C141/143/149
+DTSTART;TZID=America/Chicago:20181114T153000
+DTEND;TZID=America/Chicago:20181114T170000
+UID:submissions.supercomputing.org_SC18_sess215@linklings.com
+SUMMARY:Arithmetic and Optimization
+DESCRIPTION:ADAPT: Algorithmic Differentiation Applied to Floating-Point P
+ recision Tuning\n\nMenon, Lam, Osei-Kuffuor, Schordan, Lloyd...\n\nHPC app
+ lications extensively use floating point arithmetic operations to solve co
+ mputational problems in various domains. Mixed precision computing, use of
+  lowest precision data type sufficient to achieve a desired accuracy, have
+  been explored to improve performance, reduce power consumption and dat...
+ \n\n---------------------\nAssociative Instruction Reordering to Alleviate
+  Register Pressure\n\nRawat, Sukumaran-Rajam, Rountev, Rastello, Pouchet..
+ .\n\nRegister allocation is generally considered a practically solved prob
+ lem. For most applications, the register allocation strategies in producti
+ on compilers are very effective in controlling the number of loads/stores 
+ and register spills. However, existing register allocation strategies are 
+ not effec...\n\n---------------------\nHarnessing GPU's Tensor Cores Fast 
+ FP16 Arithmetic to Speedup Mixed-Precision Iterative Refinement Solvers\n\
+ nHaidar, Tomov, Dongarra, Higham\n\nThe use of low-precision arithmetic in
+  computing methods has been a powerful tool to accelerate numerous scienti
+ fic computing applications including Artificial Intelligence. We present a
+ n investigation showing that other HPC applications can harness this power
+  too, and in particular, the general HPC...\n
+END:VEVENT
+END:VCALENDAR
+

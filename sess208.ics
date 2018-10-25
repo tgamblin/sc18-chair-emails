@@ -1,0 +1,50 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:Linklings LLC
+BEGIN:VTIMEZONE
+TZID:America/Chicago
+X-LIC-LOCATION:America/Chicago
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0600
+TZOFFSETTO:-0500
+TZNAME:CDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0600
+TZNAME:CST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTAMP:20181025T134931Z
+LOCATION:C140/142
+DTSTART;TZID=America/Chicago:20181115T103000
+DTEND;TZID=America/Chicago:20181115T120000
+UID:submissions.supercomputing.org_SC18_sess208@linklings.com
+SUMMARY:Graph Algorithms and Systems
+DESCRIPTION:iSpan: Parallel Identification of Strongly Connected Component
+ s with Spanning Trees\n\nJi, Liu, Huang\n\nDetecting strongly connected co
+ mponents (SCCs) in a directed graph is crucial for understanding the struc
+ ture of graphs. Most real-world graphs have one large SCC that contains th
+ e majority of the vertices, and many small SCCs whose sizes are reversely 
+ proportional to the frequency of their occurren...\n\n--------------------
+ -\nfaimGraph: High Performance Management of Fully-Dynamic Graphs Under Ti
+ ght Memory Constraints on the GPU\n\nWinter, Mlakar, Zayer, Seidel, Steinb
+ erger\n\nIn this paper, we present a fully-dynamic graph data structure fo
+ r the Graphics Processing Unit (GPU). It delivers high update rates while 
+ keeping a low memory footprint using autonomous memory management directly
+  on the GPU. The data structure is fully-dynamic, allowing not only for ed
+ ge but also v...\n\n---------------------\nAdaptive Anonymization of Data 
+ with b-Edge Covers\n\nKhan, Choromanski, Pothen, Ferdous, Halappanavar...\
+ n\nWe explore the problem of sharing data that pertains to individuals wit
+ h anonymity guarantees, where each user requires a desired level of privac
+ y.  We propose the first shared-memory as well as distributed memory paral
+ lel algorithms for the adaptive anonymity problem that achieves this goal,
+  and pr...\n
+END:VEVENT
+END:VCALENDAR
+

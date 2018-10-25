@@ -1,0 +1,49 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:Linklings LLC
+BEGIN:VTIMEZONE
+TZID:America/Chicago
+X-LIC-LOCATION:America/Chicago
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0600
+TZOFFSETTO:-0500
+TZNAME:CDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0600
+TZNAME:CST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTAMP:20181025T134931Z
+LOCATION:C140/142
+DTSTART;TZID=America/Chicago:20181113T133000
+DTEND;TZID=America/Chicago:20181113T150000
+UID:submissions.supercomputing.org_SC18_sess206@linklings.com
+SUMMARY:Biology Applications
+DESCRIPTION:Redesigning LAMMPS for Petascale and Hundred-Billion-Atom Simu
+ lation on Sunway TaihuLight\n\nDuan, Gao, Zhang, Zhang, Liu...\n\nLarge-sc
+ ale molecular dynamics (MD) simulations on supercomputers play an increasi
+ ngly important role in many research areas. In this paper, we present our 
+ efforts on redesigning the widely used LAMMPS MD simulator for Sunway Taih
+ uLight supercomputer and its ShenWei many-core architecture (SW26010)....\
+ n\n---------------------\nExtreme Scale De Novo Metagenome Assembly\n\nGeo
+ rganas, Egan, Hofmeyr, Goltsman, Arndt...\n\nMetagenome assembly is the pr
+ ocess of transforming a set of short, overlapping, and potentially erroneo
+ us DNA segments from environmental samples into the accurate representatio
+ n of the underlying microbiomes's genomes. State-of-the-art tools require 
+ large shared memory machines and cannot handle co...\n\n------------------
+ ---\nOptimizing High Performance Distributed Memory Parallel Hash Tables f
+ or DNA k-mer Counting\n\nPan, Misra, Aluru\n\nHigh-throughput DNA sequenci
+ ng is the mainstay of modern genomics research. A common operation used in
+  bioinformatic analysis for many applications of high-throughput sequencin
+ g is the counting and indexing of fixed length substrings of DNA sequences
+  called k-mers. Counting k-mers is often accomplis...\n
+END:VEVENT
+END:VCALENDAR
+

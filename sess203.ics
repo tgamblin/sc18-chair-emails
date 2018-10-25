@@ -1,0 +1,49 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:Linklings LLC
+BEGIN:VTIMEZONE
+TZID:America/Chicago
+X-LIC-LOCATION:America/Chicago
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0600
+TZOFFSETTO:-0500
+TZNAME:CDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0600
+TZNAME:CST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTAMP:20181025T134931Z
+LOCATION:C141/143/149
+DTSTART;TZID=America/Chicago:20181113T103000
+DTEND;TZID=America/Chicago:20181113T120000
+UID:submissions.supercomputing.org_SC18_sess203@linklings.com
+SUMMARY:Resilience
+DESCRIPTION:GPU Age-Aware Scheduling to Improve the Reliability of Leaders
+ hip Jobs on Titan\n\nZimmer, Maxwell, McNally, Atchley, Vazhkudai\n\nThe i
+ ncreasing rate of failures on the Oak Ridge Leadership Computing Facility'
+ s (OLCF) Titan supercomputer, resulted in the replacement of 50% of its GP
+ Us between 2015 and 2017. The largest jobs, also known as "leadership jobs
+ '', continued to experience increased application failures. These jobs co.
+ ..\n\n---------------------\nDoomsday: Predicting Which Node Will Fail Whe
+ n on Supercomputers\n\nDas, Mueller, Hargrove, Roman, Baden\n\nPredicting 
+ which node will fail and how soon remains a challenge for HPC resilience, 
+ yet may pave the way to exploiting proactive remedies before jobs fail. No
+ t only for increasing scalability up to exascale systems, but even for con
+ temporary supercomputer architectures does it require substantial e...\n\n
+ ---------------------\nFlipTracker: Understanding Natural Error Resilience
+  in HPC Applications\n\nGuo, Li, Laguna, Schulz\n\nAs high-performance com
+ puting systems scale in size and computational power, the danger of silent
+  errors, i.e., errors that can bypass hardware detection mechanisms and im
+ pact application state, grows dramatically. Consequently, applications run
+ ning on HPC systems need to exhibit resilience to such ...\n
+END:VEVENT
+END:VCALENDAR
+

@@ -1,0 +1,49 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:Linklings LLC
+BEGIN:VTIMEZONE
+TZID:America/Chicago
+X-LIC-LOCATION:America/Chicago
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0600
+TZOFFSETTO:-0500
+TZNAME:CDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0600
+TZNAME:CST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTAMP:20181025T134930Z
+LOCATION:C141/143/149
+DTSTART;TZID=America/Chicago:20181114T133000
+DTEND;TZID=America/Chicago:20181114T150000
+UID:submissions.supercomputing.org_SC18_sess177@linklings.com
+SUMMARY:Clouds and Distributed Computing
+DESCRIPTION:Dynamically Negotiating Capacity Between On-Demand and Batch C
+ lusters\n\nLiu, Keahey, Riteau, Weissman\n\nIn the era of rapid experiment
+ al expansion data analysis needs are rapidly outpacing the capabilities of
+  small institutional clusters and looking to integrate HPC resources into 
+ their workflow. We propose one way of reconciling on-demand needs of exper
+ imental analytics with the batch managed HPC res...\n\n-------------------
+ --\nA Lightweight Model for Right-Sizing Master-Worker Applications\n\nKre
+ mer-Herman, Tovar, Thain\n\nWhen running a parallel application at scale, 
+ a resource provisioning policy should minimize over-commitment (idle resou
+ rces) and under-commitment (resource contention). However, users seldom kn
+ ow the quantity of resources to appropriately execute their application. E
+ ven with such knowledge, over- a...\n\n---------------------\nA Reference 
+ Architecture for Datacenter Scheduling: Design, Validation, and Experiment
+ s\n\nAndreadis, Versluis, Mastenbroek, Iosup\n\nDatacenters act as cloud-i
+ nfrastructure to stakeholders across industry, government, and academia. T
+ o meet growing demand yet operate efficiently, datacenter operators employ
+  increasingly more sophisticated scheduling systems, mechanisms, and polic
+ ies. Although many scheduling techniques already exi...\n
+END:VEVENT
+END:VCALENDAR
+

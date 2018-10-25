@@ -1,0 +1,49 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:Linklings LLC
+BEGIN:VTIMEZONE
+TZID:America/Chicago
+X-LIC-LOCATION:America/Chicago
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0600
+TZOFFSETTO:-0500
+TZNAME:CDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0600
+TZNAME:CST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTAMP:20181025T134932Z
+LOCATION:C146
+DTSTART;TZID=America/Chicago:20181113T153000
+DTEND;TZID=America/Chicago:20181113T170000
+UID:submissions.supercomputing.org_SC18_sess218@linklings.com
+SUMMARY:Performance Optimization Studies
+DESCRIPTION:Lessons Learned from Analyzing Dynamic Promotion for User-Leve
+ l Threading\n\nIwasaki, Amer, Taura, Balaji\n\nA performance vs. practical
+ ity trade-off exists between user-level threading techniques. The communit
+ y has settled mostly on a black-and-white perspective; fully fledged threa
+ ds assume that suspension is imminent and incur overheads when suspension 
+ does not take place, and run-to-completion threads ...\n\n----------------
+ -----\nMany-Core Graph Workload Analysis\n\nEyerman, Heirman, Du Bois, Fry
+ man, Hur\n\nGraph applications have specific characteristics that are not 
+ common in other application domains. In this paper, we analyze multiple gr
+ aph applications on current multi- and many-core processors and provide co
+ nclusions and recommendations for future designs. We provide new insights 
+ on executing gra...\n\n---------------------\nTopology-Aware Space-Shared 
+ Co-Analysis of Large-Scale Molecular Dynamics Simulations\n\nMalakar, Muns
+ on, Knight, Vishwanath, Papka\n\nAnalysis of scientific simulation data ca
+ n be concurrently executed with simulation either in time- or space-shared
+  mode. This mitigates the I/O bottleneck.  However it results in either st
+ alling the simulation for performing the analysis or transferring data for
+  analysis. In this paper, we improve ...\n
+END:VEVENT
+END:VCALENDAR
+

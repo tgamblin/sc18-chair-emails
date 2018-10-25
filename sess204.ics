@@ -1,0 +1,49 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:Linklings LLC
+BEGIN:VTIMEZONE
+TZID:America/Chicago
+X-LIC-LOCATION:America/Chicago
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0600
+TZOFFSETTO:-0500
+TZNAME:CDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0600
+TZNAME:CST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTAMP:20181025T134931Z
+LOCATION:C140/142
+DTSTART;TZID=America/Chicago:20181114T133000
+DTEND;TZID=America/Chicago:20181114T150000
+UID:submissions.supercomputing.org_SC18_sess204@linklings.com
+SUMMARY:Physics and Tensor Applications
+DESCRIPTION:Simulating the Wenchuan Earthquake with Accurate Surface Topog
+ raphy on Sunway TaihuLight\n\nChen, Fu, Wei, He, Zhang...\n\nThis paper re
+ ports our efforts on performing 50-m resolution earthquake simulation of t
+ he Wenchuan Earthquake (Ms 8.0, China) on Sunway TaihuLight. To accurately
+  capture the surface topography, we adopt a curvilinear grid finite-differ
+ ence method with a traction image free surface implementation and...\n\n--
+ -------------------\nAccelerating Quantum Chemistry with Vectorized and Ba
+ tched Integrals\n\nHuang, Chow\n\nThis paper presents the first quantum ch
+ emistry calculations using a recently developed vectorized library for com
+ puting electron repulsion integrals. To lengthen the SIMD loop and thus im
+ prove SIMD utilization, the approach used in this paper is to batch togeth
+ er the computation of multiple integra...\n\n---------------------\nHigh-P
+ erformance Dense Tucker Decomposition on GPU Clusters\n\nChoi, Liu, Chakar
+ avarthy\n\nThe Tucker decomposition method is one of the most popular algo
+ rithms for analyzing and compressing data with multi-way relationship. Its
+  execution time is typically dominated by dense matrix multiplication, whi
+ ch makes it well-suited for GPU acceleration. State-of-the-art distributed
+  dense Tucker i...\n
+END:VEVENT
+END:VCALENDAR
+
