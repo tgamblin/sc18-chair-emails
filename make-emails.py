@@ -36,24 +36,69 @@ for file_name in session_files:
         event = Calendar(f.read()).events[0]
 
     m = EmailMessage()
-    m['Subject'] = 'SC18 Session'
+    m['From'] = 'Todd Gamblin <tgamblin@llnl.gov>'
     m['To'] = '%s <%s>' % (name, email)
+    m['Cc'] = 'Torsten Hoefler <htor@inf.ethz.ch>'
+    m['Subject'] = f'Session Chair for {event.name} at SC18'
 
     body = m.set_content(f'''\
 Dear {name},
 
-We are writing to remind you that you are scheduled to chair paper
-session {id} at SC18.  Here is your session information:
+Thanks for agreeing to be a session chair at SC18! Session chairs help to
+ensure that SC technical talks run smoothly, and they help to provide
+lively and engaging technical discussion after presentations.
+
+You are scheduled to chair paper session {id} at SC18:
 
     Title: {event.name}
-    Time: {event.begin} - {event.end}
+    Time: {event.begin.format('ddd, MMM DD')}, {event.begin.format('h:mmA')}  - {event.end.format('h:mmA')}
     Location: {event.location}
 
-Full information is in the attached ICS calendar file.
+There is also a calendar invitation attached.
 
-Please arrive at your session location 15 minutes ahead of time to meet
-the presenters and to help them connect their laptops.
+We've put together some guidance for your session below.  Please read it
+carefully to make sure you're in sync with the instructions we've sent to
+your presenters:
 
+1. Please arrive at your session 15 minutes ahead of time to meet the
+   presenters.  We've instructed them to arrive 15 minutes early as well.
+   Help the presenters make sure that their laptops can connect to the
+   projector, and if there are any issues, alert the AV staff.  If no AV
+   staff are present in the presentation room, there will be staff
+   available in Lower Level C, Room 151/152.
+
+2. Presenters have been instructed to seek you out and to provide a 2-3
+   sentence introduction to you before the session.  You can use this
+   when introducing each speaker before their presentation.
+
+3. Keep the sessions running on time.  Presenters are expected to target
+   25 minutes for their talks, with 3 minutes for questions and 2 minutes
+   for changeover.  Let your presenters know that you'll be timing them
+   and let them know with hand signals when there are, e.g., 10, 5, and 1
+   minutes left.  You can allow them to go slightly over time, be sure
+   they at least stop before the next session starts, and ideally be sure
+   they leave time for questions.
+
+4. Each talk should start at the beginning of its scheduled time slot.
+   If a talk ends early, do not simply go on to the next talk -- wait
+   until its scheduled start time, to accommodate attendees who walk
+   between rooms to hear talks in different sessions.
+
+5. To ensure that the question time does not go unused, we ask that
+   session chairs pay close attention to presentations and have a
+   question of their own ready for cases when the audience does not ask
+   any questions.  Try to encourage the audience to ask questions before
+   you ask your own.
+
+That's all!  We look forward to seeing you at SC18!
+
+If you are unable to chair this session for ANY reason, please let us
+know as soon as possible so that we can find a substitute chair.
+
+Thanks again!
+
+Todd and Torsten
+SC18 Tech Papers Co-chairs
 ''')
 
     m.make_mixed()  # set to multipart and add attachment
