@@ -62,10 +62,10 @@ your presenters:
 
 1. Please arrive at your session 15 minutes ahead of time to meet the
    presenters.  We've instructed them to arrive 15 minutes early as well.
-   Help the presenters make sure that their laptops can connect to the
-   projector, and if there are any issues, alert the AV staff.  If no AV
-   staff are present in the presentation room, there will be staff
-   available in Lower Level C, Room 151/152.
+   Help the presenters connect their laptops to the projector. If there
+   are any issues, alert the student volunteers, and if that fails you
+   can have them contact AV staff.  If none are in the presentation
+   rooms, AV staff are available in Lower Level C, Room 151/152.
 
 2. Presenters have been instructed to seek you out and to provide a 2-3
    sentence introduction to you before the session.  You can use this
@@ -84,7 +84,10 @@ your presenters:
    until its scheduled start time, to accommodate attendees who walk
    between rooms to hear talks in different sessions.
 
-5. To ensure that the question time does not go unused, we ask that
+5. Student volunteers should help by running microphones around to
+   audience members with questions when you call on them.
+
+6. To ensure that the question time does not go unused, we ask that
    session chairs pay close attention to presentations and have a
    question of their own ready for cases when the audience does not ask
    any questions.  Try to encourage the audience to ask questions before
